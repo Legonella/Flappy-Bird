@@ -22,3 +22,21 @@ fly.src = 'audio/fly.mp3'
 score_audio.src = 'audio/score.mp3'
 
 let gap = 90
+
+// When you press any button
+document.addEventListener('keydown', moveUp)
+
+function moveUp() {
+    yPos -= 25
+    fly.play()
+}
+
+// Creating blocks
+const pipe = []
+
+pipe[0] = {
+    x: cvs.width,
+    y: 0,
+}
+
+let score = 0
