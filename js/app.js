@@ -14,3 +14,11 @@ fg.src = 'img/fg.png'
 pipeUp.src = 'img/pipeUp.png'
 pipeBottom.src = 'img/pipeBottom.png'
 
+// Audio
+const fly = new Audio()
+const score_audio = new Audio()
+
+fly.src = 'audio/fly.mp3'
+score_audio.src = 'audio/score.mp3'
+
+let gap = 90
